@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -10,7 +10,7 @@
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WinverUWP</RootNamespace>
-    <AssemblyName>WinverUWP</AssemblyName>
+    <AssemblyName>WinMacWinver</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.22621.0</TargetPlatformVersion>
@@ -141,6 +141,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Helpers\CultureInfoHelper.cs" />
+    <Compile Include="Helpers\DeviceInfoHelper.cs" />
     <Compile Include="Helpers\ExpirationHelper.cs" />
     <Compile Include="Helpers\OSPathsHelper.cs" />
     <Compile Include="Helpers\WinbrandHelper.cs" />
@@ -150,6 +151,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Helpers\RegistryHelper.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Windows.ApplicationModel.FullTrustAppContract"><HintPath>$(MSBuildProgramFiles32)\Windows Kits\10\References\$(TargetPlatformVersion)\Windows.ApplicationModel.FullTrustAppContract\2.0.0.0\Windows.ApplicationModel.FullTrustAppContract.winmd</HintPath><IsWinMDFile>true</IsWinMDFile></Reference>
+    <Content Include="bin\InventoryProbe.exe"><Link>InventoryProbe.exe</Link></Content>
+    <None Include="InventoryProbe\Program.cs" />
+  </ItemGroup>
+  <Target Name="BuildInventoryProbe" BeforeTargets="BeforeBuild">
+    <Exec Command="&quot;$(SystemRoot)\Microsoft.NET\Framework64\v4.0.30319\csc.exe&quot; /nologo /target:winexe /platform:anycpu /r:System.Management.dll /out:&quot;$(MSBuildProjectDirectory)\bin\InventoryProbe.exe&quot; &quot;$(MSBuildProjectDirectory)\InventoryProbe\Program.cs&quot;" />
+  </Target>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
@@ -241,6 +250,8 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <PRIResource Include="Strings\sr-Latn-RS\Resources.resw"><SubType>Designer</SubType></PRIResource>
+    <PRIResource Include="Strings\tr-TR\Resources.resw"><SubType>Designer</SubType></PRIResource>
     <PRIResource Include="Strings\en-US\Resources.resw">
       <SubType>Designer</SubType>
     </PRIResource>
@@ -286,9 +297,7 @@
     <PRIResource Include="Strings\zh-Hans\Resources.resw">
       <SubType>Designer</SubType>
     </PRIResource>
-    <PRIResource Include="Strings\hu-HU\Resources.resw">
-      <SubType>Designer</SubType>
-    </PRIResource>
+
     <PRIResource Include="Strings\fr-FR\Resources.resw">
       <SubType>Designer</SubType>
     </PRIResource>

@@ -1,5 +1,7 @@
-# WinverUWP
-A UWP version of winver.
+# WinMac Winver
+A multilingual WinUI alternative to winver, based on WinverUWP.
+
+The app is named **WinMac Winver** (`WinMacWinver.exe`); its window title remains **About Windows** (localized).
 
 [Microsoft Store](https://www.microsoft.com/p/winver-uwp/9n60s2vfmb7l) | [Discord channel](https://discord.gg/MUyRGUN4Ny) | [Privacy Policy](/PRIVACY.md)
 

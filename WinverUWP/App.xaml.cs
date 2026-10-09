@@ -1,5 +1,7 @@
-﻿using System;
+using System;
 using Windows.ApplicationModel.Activation;
+using Windows.Globalization;
+using WinverUWP.Helpers;
 using Windows.Foundation;
 using Windows.Foundation.Metadata;
 using Windows.Storage;
@@ -12,12 +14,15 @@ namespace WinverUWP;
 
 sealed partial class App : Application
 {
+    private static readonly Size DefaultViewSize = new Size(500, 640);
+
     public App()
     {
         // Commenting this out since it is too buggy right mow.
         // if (ApiInformation.IsTypePresent("Windows.UI.Composition.CompositionShape"))
         //     Native.VectorDetours.EnableVectorRendering();
         
+        ApplicationLanguages.PrimaryLanguageOverride = CultureInfoHelper.GetWindowsDisplayLanguage();
         this.InitializeComponent();
     }
 
@@ -38,14 +43,8 @@ sealed partial class App : Application
 
     private void StartApp()
     {
-        if (!ApplicationData.Current.LocalSettings.Values.ContainsKey("IsNotFirstRun"))
-        {
-            ApplicationView appView = ApplicationView.GetForCurrentView();
-            appView.TryResizeView(new Size(500, 675));
-            ApplicationData.Current.LocalSettings.Values["IsNotFirstRun"] = true;
-        }
-        else
-            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.Auto;
+        ApplicationView.PreferredLaunchViewSize = DefaultViewSize;
+        ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
 
         Frame frame;
         frame = Window.Current.Content as Frame;
@@ -56,7 +55,13 @@ sealed partial class App : Application
         frame.Navigate(typeof(MainPage));
         Window.Current.Content = frame;
 
-        // Ensure the current window is active
+        var page = (MainPage)frame.Content;
+        page.Initialize();
+        var size = DefaultViewSize;
+        ApplicationView.PreferredLaunchViewSize = size;
+        ApplicationView.GetForCurrentView().TryResizeView(size);
         Window.Current.Activate();
+        _ = page.RefreshStorageAsync();
     }
+
 }

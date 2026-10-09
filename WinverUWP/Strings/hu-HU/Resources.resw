@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -130,7 +130,7 @@
     <value>Kiadás</value>
   </data>
   <data name="Expiration.Text" xml:space="preserve">
-    <value>Minőség</value>
+    <value>Lejárat</value>
   </data>
   <data name="InstalledOn.Text" xml:space="preserve">
     <value>Telepítés dátuma</value>
@@ -154,6 +154,144 @@
     <value>Verzió</value>
   </data>
   <data name="WindowsSpecifications.Text" xml:space="preserve">
-    <value>Windows-specifikációk</value>
+    <value>Windows-információk</value>
   </data>
+  <data name="DeviceInfo.Text" xml:space="preserve">
+    <value>Eszközinformációk</value>
+  </data>
+  <data name="DeviceNameLabel.Text" xml:space="preserve">
+    <value>Eszköz neve</value>
+  </data>
+  <data name="ProcessorLabel.Text" xml:space="preserve">
+    <value>Processzor</value>
+  </data>
+  <data name="InstalledRamLabel.Text" xml:space="preserve">
+    <value>Memória</value>
+  </data>
+  <data name="DeviceIdLabel.Text" xml:space="preserve">
+    <value>Eszközazonosító</value>
+  </data>
+  <data name="ProductIdLabel.Text" xml:space="preserve">
+    <value>Termékazonosító</value>
+  </data>
+  <data name="SystemTypeLabel.Text" xml:space="preserve">
+    <value>Rendszer típusa</value>
+  </data>
+  <data name="PenAndTouchLabel.Text" xml:space="preserve">
+    <value>Toll és érintés</value>
+  </data>
+  <data name="DeviceUnavailable" xml:space="preserve">
+    <value>Nem érhető el</value>
+  </data>
+  <data name="DeviceSystemType" xml:space="preserve">
+    <value>{0} bites operációs rendszer, {1} alapú processzor</value>
+  </data>
+  <data name="DeviceNoTouch" xml:space="preserve">
+    <value>Ehhez a kijelzőhöz nem érhető el tollas vagy érintéses bevitel</value>
+  </data>
+  <data name="DeviceTouch" xml:space="preserve">
+    <value>Érintés támogatása {0} érintési ponttal</value>
+  </data>
+  <data name="DevicePen" xml:space="preserve">
+    <value>Toll támogatása</value>
+  </data>
+  <data name="DevicePenAndTouch" xml:space="preserve">
+    <value>Toll és érintés támogatása {0} érintési ponttal</value>
+  </data>
+  <data name="SettingsTitle.Text" xml:space="preserve">
+    <value>Beállítások</value>
+  </data>
+  <data name="AppearanceCategory.Text" xml:space="preserve">
+    <value>Megjelenés</value>
+  </data>
+  <data name="AppThemeTitle.Text" xml:space="preserve">
+    <value>Alkalmazástéma</value>
+  </data>
+  <data name="AppThemeDescription.Text" xml:space="preserve">
+    <value>Válassza ki az alkalmazás témáját</value>
+  </data>
+  <data name="LightTheme.Content" xml:space="preserve">
+    <value>Világos</value>
+  </data>
+  <data name="DarkTheme.Content" xml:space="preserve">
+    <value>Sötét</value>
+  </data>
+  <data name="SystemTheme.Content" xml:space="preserve">
+    <value>Rendszerbeállítás használata</value>
+  </data>
+  <data name="LegalSettingTitle.Text" xml:space="preserve">
+    <value>Jogi információk</value>
+  </data>
+  <data name="LegalSettingDescription.Text" xml:space="preserve">
+    <value>Licencinformációk megjelenítése</value>
+  </data>
+  <data name="StartupCategory.Text" xml:space="preserve">
+    <value>A Windows névjegyének indításakor</value>
+  </data>
+  <data name="RememberCardsTitle.Text" xml:space="preserve">
+    <value>Kártyák állapotának megjegyzése</value>
+  </data>
+  <data name="RememberCardsDescription.Text" xml:space="preserve">
+    <value>A kibontott és összecsukott kártyák visszaállítása indításkor</value>
+  </data>
+  <data name="SettingsButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Beállítások megnyitása</value>
+  </data>
+  <data name="SettingsButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Beállítások megnyitása</value>
+  </data>
+  <data name="SettingsBackButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Vissza</value>
+  </data>
+  <data name="SettingsBackButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Vissza</value>
+  </data>
+  <data name="ShowLegalToggle.OnContent" xml:space="preserve">
+    <value>Be</value>
+  </data>
+  <data name="ShowLegalToggle.OffContent" xml:space="preserve">
+    <value>Ki</value>
+  </data>
+  <data name="RememberCardsToggle.OnContent" xml:space="preserve">
+    <value>Be</value>
+  </data>
+  <data name="RememberCardsToggle.OffContent" xml:space="preserve">
+    <value>Ki</value>
+  </data>
+  <data name="RememberCardsToggle.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Kártyák állapotának megjegyzése</value>
+  </data>
+  <data name="ApplicationName" xml:space="preserve">
+    <value>WinMac Winver</value>
+  </data>
+  <data name="DeviceMemoryFormat" xml:space="preserve">
+    <value>{0} GB</value>
+  </data>
+  <data name="ShowLegalToggle.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Jogi információk</value>
+  </data>
+  <data name="GraphicsCardLabel.Text" xml:space="preserve">
+    <value>Videokártya</value>
+  </data>
+  <data name="StorageLabel.Text" xml:space="preserve">
+    <value>Tárterület</value>
+  </data>
+  <data name="Experience.Text" xml:space="preserve">
+    <value>Felhasználói élmény</value>
+  </data>
+  <data name="DeviceStorageFormat" xml:space="preserve">
+    <value>{0} GB</value>
+  </data>
+  <data name="DeviceGraphicsFormat" xml:space="preserve">
+    <value>{0} ({1} MB)</value>
+  </data>
+  <data name="MoreInfoButton.Content" xml:space="preserve">
+    <value>További információ</value>
+  </data>
+  <data name="CollapsibleCardsTitle.Text" xml:space="preserve"><value>Összecsukható információs blokkok</value></data>
+  <data name="CollapsibleCardsDescription.Text" xml:space="preserve"><value>Az információs blokkok kinyitása és összecsukása</value></data>
+  <data name="CollapsibleCardsToggle.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>Összecsukható információs blokkok</value></data>
+  <data name="CollapsibleCardsToggle.OnContent" xml:space="preserve"><value>Be</value></data>
+  <data name="CollapsibleCardsToggle.OffContent" xml:space="preserve"><value>Ki</value></data>
+  <data name="WindowDisplayName" xml:space="preserve"><value>Windows - névjegy</value></data>
 </root>

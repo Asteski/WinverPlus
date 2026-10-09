@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -136,7 +136,7 @@
     <value>Légal</value>
   </data>
   <data name="LicenseTo.Text" xml:space="preserve">
-    <value>Ce produit est fourni sou licence selon les Termes du contrat de licence logiciel Microsft à:</value>
+    <value>Ce produit est concédé sous licence selon les termes du contrat de licence logiciel Microsoft à :</value>
   </data>
   <data name="OKButton.Content" xml:space="preserve">
     <value>OK</value>
@@ -145,12 +145,153 @@
     <value>Build du système d'exploitation</value>
   </data>
   <data name="Trademark.Text" xml:space="preserve">
-    <value>Le système d'exploitaion Windows 11 et son interface utilisateur sont protégés par une marque et d'autres droits de propriété intellectuelle, existants ou en attente, aux États-Unis et dans d'autres pays/régions.</value>
+    <value>Le système d'exploitation Windows et son interface utilisateur sont protégés par une marque et d'autres droits de propriété intellectuelle, existants ou en attente, aux États-Unis et dans d'autres pays/régions.</value>
   </data>
   <data name="Version.Text" xml:space="preserve">
     <value>Version</value>
   </data>
   <data name="WindowsSpecifications.Text" xml:space="preserve">
-    <value>Spécifications de Windows</value>
+    <value>Informations sur Windows</value>
   </data>
+  <data name="DeviceInfo.Text" xml:space="preserve">
+    <value>Informations sur l’appareil</value>
+  </data>
+  <data name="DeviceNameLabel.Text" xml:space="preserve">
+    <value>Nom de l’appareil</value>
+  </data>
+  <data name="ProcessorLabel.Text" xml:space="preserve">
+    <value>Processeur</value>
+  </data>
+  <data name="InstalledRamLabel.Text" xml:space="preserve">
+    <value>Mémoire</value>
+  </data>
+  <data name="DeviceIdLabel.Text" xml:space="preserve">
+    <value>ID de l’appareil</value>
+  </data>
+  <data name="ProductIdLabel.Text" xml:space="preserve">
+    <value>ID de produit</value>
+  </data>
+  <data name="SystemTypeLabel.Text" xml:space="preserve">
+    <value>Type du système</value>
+  </data>
+  <data name="PenAndTouchLabel.Text" xml:space="preserve">
+    <value>Stylet et fonction tactile</value>
+  </data>
+  <data name="DeviceUnavailable" xml:space="preserve">
+    <value>Non disponible</value>
+  </data>
+  <data name="DeviceSystemType" xml:space="preserve">
+    <value>Système d’exploitation {0} bits, processeur {1}</value>
+  </data>
+  <data name="DeviceNoTouch" xml:space="preserve">
+    <value>Aucune fonctionnalité de saisie tactile ou avec un stylet n’est disponible sur cet écran</value>
+  </data>
+  <data name="DeviceTouch" xml:space="preserve">
+    <value>Prise en charge tactile avec {0} points de contact</value>
+  </data>
+  <data name="DevicePen" xml:space="preserve">
+    <value>Prise en charge du stylet</value>
+  </data>
+  <data name="DevicePenAndTouch" xml:space="preserve">
+    <value>Prise en charge du stylet et du tactile avec {0} points de contact</value>
+  </data>
+  <data name="SettingsTitle.Text" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="AppearanceCategory.Text" xml:space="preserve">
+    <value>Apparence</value>
+  </data>
+  <data name="AppThemeTitle.Text" xml:space="preserve">
+    <value>Thème de l’application</value>
+  </data>
+  <data name="AppThemeDescription.Text" xml:space="preserve">
+    <value>Choisissez le thème de l’application</value>
+  </data>
+  <data name="LightTheme.Content" xml:space="preserve">
+    <value>Clair</value>
+  </data>
+  <data name="DarkTheme.Content" xml:space="preserve">
+    <value>Sombre</value>
+  </data>
+  <data name="SystemTheme.Content" xml:space="preserve">
+    <value>Utiliser le paramètre système</value>
+  </data>
+  <data name="LegalSettingTitle.Text" xml:space="preserve">
+    <value>Informations légales</value>
+  </data>
+  <data name="LegalSettingDescription.Text" xml:space="preserve">
+    <value>Afficher les informations de licence</value>
+  </data>
+  <data name="StartupCategory.Text" xml:space="preserve">
+    <value>Au démarrage d’À propos de Windows</value>
+  </data>
+  <data name="RememberCardsTitle.Text" xml:space="preserve">
+    <value>Mémoriser l’état des cartes</value>
+  </data>
+  <data name="RememberCardsDescription.Text" xml:space="preserve">
+    <value>Restaurer les cartes développées et réduites au démarrage</value>
+  </data>
+  <data name="Expiration.Text" xml:space="preserve">
+    <value>Expiration</value>
+  </data>
+  <data name="SettingsButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Ouvrir les paramètres</value>
+  </data>
+  <data name="SettingsButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Ouvrir les paramètres</value>
+  </data>
+  <data name="SettingsBackButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Retour</value>
+  </data>
+  <data name="SettingsBackButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Retour</value>
+  </data>
+  <data name="ShowLegalToggle.OnContent" xml:space="preserve">
+    <value>Activé</value>
+  </data>
+  <data name="ShowLegalToggle.OffContent" xml:space="preserve">
+    <value>Désactivé</value>
+  </data>
+  <data name="RememberCardsToggle.OnContent" xml:space="preserve">
+    <value>Activé</value>
+  </data>
+  <data name="RememberCardsToggle.OffContent" xml:space="preserve">
+    <value>Désactivé</value>
+  </data>
+  <data name="RememberCardsToggle.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Mémoriser l’état des cartes</value>
+  </data>
+  <data name="ApplicationName" xml:space="preserve">
+    <value>WinMac Winver</value>
+  </data>
+  <data name="DeviceMemoryFormat" xml:space="preserve">
+    <value>{0} Go</value>
+  </data>
+  <data name="ShowLegalToggle.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Informations légales</value>
+  </data>
+  <data name="GraphicsCardLabel.Text" xml:space="preserve">
+    <value>Carte graphique</value>
+  </data>
+  <data name="StorageLabel.Text" xml:space="preserve">
+    <value>Stockage</value>
+  </data>
+  <data name="Experience.Text" xml:space="preserve">
+    <value>Expérience</value>
+  </data>
+  <data name="DeviceStorageFormat" xml:space="preserve">
+    <value>{0} Go</value>
+  </data>
+  <data name="DeviceGraphicsFormat" xml:space="preserve">
+    <value>{0} ({1} MB)</value>
+  </data>
+  <data name="MoreInfoButton.Content" xml:space="preserve">
+    <value>Plus d’informations</value>
+  </data>
+  <data name="CollapsibleCardsTitle.Text" xml:space="preserve"><value>Réduire les blocs d’informations</value></data>
+  <data name="CollapsibleCardsDescription.Text" xml:space="preserve"><value>Développer et réduire les blocs d’informations</value></data>
+  <data name="CollapsibleCardsToggle.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>Réduire les blocs d’informations</value></data>
+  <data name="CollapsibleCardsToggle.OnContent" xml:space="preserve"><value>Activé</value></data>
+  <data name="CollapsibleCardsToggle.OffContent" xml:space="preserve"><value>Désactivé</value></data>
+  <data name="WindowDisplayName" xml:space="preserve"><value>À propos de Windows</value></data>
 </root>

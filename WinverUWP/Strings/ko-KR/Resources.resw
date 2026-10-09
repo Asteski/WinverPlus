@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -154,6 +154,144 @@
     <value>버전</value>
   </data>
   <data name="WindowsSpecifications.Text" xml:space="preserve">
-    <value>Windows 사양</value>
+    <value>Windows 정보</value>
   </data>
+  <data name="DeviceInfo.Text" xml:space="preserve">
+    <value>장치 정보</value>
+  </data>
+  <data name="DeviceNameLabel.Text" xml:space="preserve">
+    <value>장치 이름</value>
+  </data>
+  <data name="ProcessorLabel.Text" xml:space="preserve">
+    <value>프로세서</value>
+  </data>
+  <data name="InstalledRamLabel.Text" xml:space="preserve">
+    <value>메모리</value>
+  </data>
+  <data name="DeviceIdLabel.Text" xml:space="preserve">
+    <value>장치 ID</value>
+  </data>
+  <data name="ProductIdLabel.Text" xml:space="preserve">
+    <value>제품 ID</value>
+  </data>
+  <data name="SystemTypeLabel.Text" xml:space="preserve">
+    <value>시스템 종류</value>
+  </data>
+  <data name="PenAndTouchLabel.Text" xml:space="preserve">
+    <value>펜 및 터치</value>
+  </data>
+  <data name="DeviceUnavailable" xml:space="preserve">
+    <value>사용할 수 없음</value>
+  </data>
+  <data name="DeviceSystemType" xml:space="preserve">
+    <value>{0}비트 운영 체제, {1} 기반 프로세서</value>
+  </data>
+  <data name="DeviceNoTouch" xml:space="preserve">
+    <value>이 디스플레이에 사용할 수 있는 펜 또는 터치식 입력이 없습니다</value>
+  </data>
+  <data name="DeviceTouch" xml:space="preserve">
+    <value>{0}개의 터치 포인트를 지원하는 터치 기능</value>
+  </data>
+  <data name="DevicePen" xml:space="preserve">
+    <value>펜 지원</value>
+  </data>
+  <data name="DevicePenAndTouch" xml:space="preserve">
+    <value>{0}개의 터치 포인트를 지원하는 펜 및 터치 기능</value>
+  </data>
+  <data name="SettingsTitle.Text" xml:space="preserve">
+    <value>설정</value>
+  </data>
+  <data name="AppearanceCategory.Text" xml:space="preserve">
+    <value>모양</value>
+  </data>
+  <data name="AppThemeTitle.Text" xml:space="preserve">
+    <value>앱 테마</value>
+  </data>
+  <data name="AppThemeDescription.Text" xml:space="preserve">
+    <value>표시할 앱 테마 선택</value>
+  </data>
+  <data name="LightTheme.Content" xml:space="preserve">
+    <value>밝게</value>
+  </data>
+  <data name="DarkTheme.Content" xml:space="preserve">
+    <value>어둡게</value>
+  </data>
+  <data name="SystemTheme.Content" xml:space="preserve">
+    <value>시스템 설정 사용</value>
+  </data>
+  <data name="LegalSettingTitle.Text" xml:space="preserve">
+    <value>법적 정보</value>
+  </data>
+  <data name="LegalSettingDescription.Text" xml:space="preserve">
+    <value>라이선스 정보 표시</value>
+  </data>
+  <data name="StartupCategory.Text" xml:space="preserve">
+    <value>Windows 정보 시작 시</value>
+  </data>
+  <data name="RememberCardsTitle.Text" xml:space="preserve">
+    <value>카드 상태 기억</value>
+  </data>
+  <data name="RememberCardsDescription.Text" xml:space="preserve">
+    <value>시작할 때 펼치거나 접은 카드 상태 복원</value>
+  </data>
+  <data name="SettingsButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>설정 열기</value>
+  </data>
+  <data name="SettingsButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>설정 열기</value>
+  </data>
+  <data name="SettingsBackButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>뒤로</value>
+  </data>
+  <data name="SettingsBackButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>뒤로</value>
+  </data>
+  <data name="ShowLegalToggle.OnContent" xml:space="preserve">
+    <value>켬</value>
+  </data>
+  <data name="ShowLegalToggle.OffContent" xml:space="preserve">
+    <value>끔</value>
+  </data>
+  <data name="RememberCardsToggle.OnContent" xml:space="preserve">
+    <value>켬</value>
+  </data>
+  <data name="RememberCardsToggle.OffContent" xml:space="preserve">
+    <value>끔</value>
+  </data>
+  <data name="RememberCardsToggle.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>카드 상태 기억</value>
+  </data>
+  <data name="ApplicationName" xml:space="preserve">
+    <value>WinMac Winver</value>
+  </data>
+  <data name="DeviceMemoryFormat" xml:space="preserve">
+    <value>{0} GB</value>
+  </data>
+  <data name="ShowLegalToggle.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>법적 정보</value>
+  </data>
+  <data name="GraphicsCardLabel.Text" xml:space="preserve">
+    <value>그래픽 카드</value>
+  </data>
+  <data name="StorageLabel.Text" xml:space="preserve">
+    <value>저장소</value>
+  </data>
+  <data name="Experience.Text" xml:space="preserve">
+    <value>환경</value>
+  </data>
+  <data name="DeviceStorageFormat" xml:space="preserve">
+    <value>{0} GB</value>
+  </data>
+  <data name="DeviceGraphicsFormat" xml:space="preserve">
+    <value>{0} ({1} MB)</value>
+  </data>
+  <data name="MoreInfoButton.Content" xml:space="preserve">
+    <value>자세한 정보</value>
+  </data>
+  <data name="CollapsibleCardsTitle.Text" xml:space="preserve"><value>정보 블록 접기 허용</value></data>
+  <data name="CollapsibleCardsDescription.Text" xml:space="preserve"><value>정보 블록을 펼치거나 접을 수 있습니다</value></data>
+  <data name="CollapsibleCardsToggle.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>정보 블록 접기 허용</value></data>
+  <data name="CollapsibleCardsToggle.OnContent" xml:space="preserve"><value>켬</value></data>
+  <data name="CollapsibleCardsToggle.OffContent" xml:space="preserve"><value>끔</value></data>
+  <data name="WindowDisplayName" xml:space="preserve"><value>Windows 정보</value></data>
 </root>

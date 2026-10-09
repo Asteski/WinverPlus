@@ -1,4 +1,8 @@
 ﻿using System.Globalization;
+using System;
+using System.Linq;
+using Windows.Globalization;
+using Windows.System.UserProfile;
 using System.Runtime.InteropServices;
 
 namespace WinverUWP.Helpers;
@@ -8,6 +12,28 @@ public unsafe class CultureInfoHelper
     [DllImport("api-ms-win-core-localization-l1-2-1.dll", CharSet = CharSet.Unicode)]
     private static extern int GetLocaleInfoEx(ushort* lpLocaleName, uint LCType, ushort* lpLCData, int cchData);
 
+
+    [DllImport("kernel32.dll")]
+    private static extern ushort GetUserDefaultUILanguage();
+
+    public static string GetWindowsDisplayLanguage()
+    {
+        // The Windows display language is distinct from the regional format and
+        // keyboard/preferred-language list used by packaged apps by default.
+        string displayLanguage;
+        try { displayLanguage = CultureInfo.GetCultureInfo(GetUserDefaultUILanguage()).Name; }
+        catch (CultureNotFoundException) { displayLanguage = GlobalizationPreferences.Languages.FirstOrDefault() ?? "en-US"; }
+
+        if (string.IsNullOrWhiteSpace(displayLanguage)) displayLanguage = "en-US";
+        var supported = ApplicationLanguages.ManifestLanguages;
+        var exact = supported.FirstOrDefault(tag => string.Equals(tag, displayLanguage, StringComparison.OrdinalIgnoreCase));
+        if (exact != null) return exact;
+        var requested = new Language(displayLanguage);
+        var culture = new CultureInfo(displayLanguage);
+        return supported.FirstOrDefault(tag =>
+            new CultureInfo(tag).TwoLetterISOLanguageName == culture.TwoLetterISOLanguageName &&
+            new Language(tag).Script == requested.Script) ?? "en-US";
+    }
 
     private const uint LOCALE_SNAME = 0x0000005c;
     private const string LOCALE_NAME_USER_DEFAULT = null;
@@ -40,7 +66,7 @@ public unsafe class CultureInfoHelper
             fixed(char* test = stackalloc char[BUFFER_SIZE])
             {
                 int result = GetLocaleInfoEx((ushort*)locale, LCType, (ushort*)test, BUFFER_SIZE);
-                return new(test);
+                return result > 0 ? new string(test) : null;
             }
         }
     }

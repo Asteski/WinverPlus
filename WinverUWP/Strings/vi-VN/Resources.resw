@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -130,7 +130,7 @@
     <value>Hệ điều hành</value>
   </data>
   <data name="Expiration.Text" xml:space="preserve">
-    <value>Ngày hết hạn</value>
+    <value>Hết hạn</value>
   </data>
   <data name="InstalledOn.Text" xml:space="preserve">
     <value>Đã cài đặt vào</value>
@@ -154,6 +154,144 @@
     <value>Phiên Bản</value>
   </data>
   <data name="WindowsSpecifications.Text" xml:space="preserve">
-    <value>Thông số kỹ thuật của Windows</value>
+    <value>Thông tin Windows</value>
   </data>
+  <data name="DeviceInfo.Text" xml:space="preserve">
+    <value>Thông tin thiết bị</value>
+  </data>
+  <data name="DeviceNameLabel.Text" xml:space="preserve">
+    <value>Tên thiết bị</value>
+  </data>
+  <data name="ProcessorLabel.Text" xml:space="preserve">
+    <value>Bộ xử lý</value>
+  </data>
+  <data name="InstalledRamLabel.Text" xml:space="preserve">
+    <value>Memory</value>
+  </data>
+  <data name="DeviceIdLabel.Text" xml:space="preserve">
+    <value>ID thiết bị</value>
+  </data>
+  <data name="ProductIdLabel.Text" xml:space="preserve">
+    <value>ID sản phẩm</value>
+  </data>
+  <data name="SystemTypeLabel.Text" xml:space="preserve">
+    <value>Loại hệ thống</value>
+  </data>
+  <data name="PenAndTouchLabel.Text" xml:space="preserve">
+    <value>Bút và cảm ứng</value>
+  </data>
+  <data name="DeviceUnavailable" xml:space="preserve">
+    <value>Không khả dụng</value>
+  </data>
+  <data name="DeviceSystemType" xml:space="preserve">
+    <value>Hệ điều hành {0} bit, bộ xử lý dựa trên {1}</value>
+  </data>
+  <data name="DeviceNoTouch" xml:space="preserve">
+    <value>Không có đầu vào bằng bút hoặc cảm ứng cho màn hình này</value>
+  </data>
+  <data name="DeviceTouch" xml:space="preserve">
+    <value>Hỗ trợ cảm ứng với {0} điểm chạm</value>
+  </data>
+  <data name="DevicePen" xml:space="preserve">
+    <value>Hỗ trợ bút</value>
+  </data>
+  <data name="DevicePenAndTouch" xml:space="preserve">
+    <value>Hỗ trợ bút và cảm ứng với {0} điểm chạm</value>
+  </data>
+  <data name="SettingsTitle.Text" xml:space="preserve">
+    <value>Cài đặt</value>
+  </data>
+  <data name="AppearanceCategory.Text" xml:space="preserve">
+    <value>Giao diện</value>
+  </data>
+  <data name="AppThemeTitle.Text" xml:space="preserve">
+    <value>Chủ đề ứng dụng</value>
+  </data>
+  <data name="AppThemeDescription.Text" xml:space="preserve">
+    <value>Chọn chủ đề ứng dụng để hiển thị</value>
+  </data>
+  <data name="LightTheme.Content" xml:space="preserve">
+    <value>Sáng</value>
+  </data>
+  <data name="DarkTheme.Content" xml:space="preserve">
+    <value>Tối</value>
+  </data>
+  <data name="SystemTheme.Content" xml:space="preserve">
+    <value>Sử dụng cài đặt hệ thống</value>
+  </data>
+  <data name="LegalSettingTitle.Text" xml:space="preserve">
+    <value>Thông tin pháp lý</value>
+  </data>
+  <data name="LegalSettingDescription.Text" xml:space="preserve">
+    <value>Hiển thị thông tin giấy phép</value>
+  </data>
+  <data name="StartupCategory.Text" xml:space="preserve">
+    <value>Khi mở Giới thiệu về Windows</value>
+  </data>
+  <data name="RememberCardsTitle.Text" xml:space="preserve">
+    <value>Ghi nhớ trạng thái thẻ</value>
+  </data>
+  <data name="RememberCardsDescription.Text" xml:space="preserve">
+    <value>Khôi phục các thẻ mở rộng và thu gọn khi khởi động</value>
+  </data>
+  <data name="SettingsButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Mở cài đặt</value>
+  </data>
+  <data name="SettingsButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Mở cài đặt</value>
+  </data>
+  <data name="SettingsBackButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Quay lại</value>
+  </data>
+  <data name="SettingsBackButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Quay lại</value>
+  </data>
+  <data name="ShowLegalToggle.OnContent" xml:space="preserve">
+    <value>Bật</value>
+  </data>
+  <data name="ShowLegalToggle.OffContent" xml:space="preserve">
+    <value>Tắt</value>
+  </data>
+  <data name="RememberCardsToggle.OnContent" xml:space="preserve">
+    <value>Bật</value>
+  </data>
+  <data name="RememberCardsToggle.OffContent" xml:space="preserve">
+    <value>Tắt</value>
+  </data>
+  <data name="RememberCardsToggle.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Ghi nhớ trạng thái thẻ</value>
+  </data>
+  <data name="ApplicationName" xml:space="preserve">
+    <value>WinMac Winver</value>
+  </data>
+  <data name="DeviceMemoryFormat" xml:space="preserve">
+    <value>{0} GB</value>
+  </data>
+  <data name="ShowLegalToggle.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Thông tin pháp lý</value>
+  </data>
+  <data name="GraphicsCardLabel.Text" xml:space="preserve">
+    <value>Cạc đồ họa</value>
+  </data>
+  <data name="StorageLabel.Text" xml:space="preserve">
+    <value>Dung lượng lưu trữ</value>
+  </data>
+  <data name="Experience.Text" xml:space="preserve">
+    <value>Trải nghiệm</value>
+  </data>
+  <data name="DeviceStorageFormat" xml:space="preserve">
+    <value>{0} GB</value>
+  </data>
+  <data name="DeviceGraphicsFormat" xml:space="preserve">
+    <value>{0} ({1} MB)</value>
+  </data>
+  <data name="MoreInfoButton.Content" xml:space="preserve">
+    <value>Thông tin khác</value>
+  </data>
+  <data name="CollapsibleCardsTitle.Text" xml:space="preserve"><value>Згортання інформаційних блоків</value></data>
+  <data name="CollapsibleCardsDescription.Text" xml:space="preserve"><value>Дозволити розгортати та згортати інформаційні блоки</value></data>
+  <data name="CollapsibleCardsToggle.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>Згортання інформаційних блоків</value></data>
+  <data name="CollapsibleCardsToggle.OnContent" xml:space="preserve"><value>Bật</value></data>
+  <data name="CollapsibleCardsToggle.OffContent" xml:space="preserve"><value>Tắt</value></data>
+  <data name="WindowDisplayName" xml:space="preserve"><value>Thông tin về Windows</value></data>
 </root>

@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -129,12 +129,6 @@
   <data name="Edition.Text" xml:space="preserve">
     <value>සංස්කරණය</value>
   </data>
-  <data name="Experience.Text" xml:space="preserve">
-    <value>අත්දැකීම</value>
-  </data>
-  <data name="ExperiencePack" xml:space="preserve">
-    <value>Windows විශේෂාංග අත්දැකීම් පැකේජය</value>
-  </data>
   <data name="InstalledOn.Text" xml:space="preserve">
     <value>ස්ථාපනය කර ඇත්තේ</value>
   </data>
@@ -157,6 +151,147 @@
     <value>අනුවාදය</value>
   </data>
   <data name="WindowsSpecifications.Text" xml:space="preserve">
-    <value>Windows පිරිවිතර</value>
+    <value>Windows තොරතුරු</value>
   </data>
+  <data name="DeviceInfo.Text" xml:space="preserve">
+    <value>උපාංග තොරතුරු</value>
+  </data>
+  <data name="DeviceNameLabel.Text" xml:space="preserve">
+    <value>උපාංග නම</value>
+  </data>
+  <data name="ProcessorLabel.Text" xml:space="preserve">
+    <value>සකසනය</value>
+  </data>
+  <data name="InstalledRamLabel.Text" xml:space="preserve">
+    <value>මතකය</value>
+  </data>
+  <data name="DeviceIdLabel.Text" xml:space="preserve">
+    <value>උපාංග හැඳුනුම්පත</value>
+  </data>
+  <data name="ProductIdLabel.Text" xml:space="preserve">
+    <value>නිෂ්පාදන හැඳුනුම්පත</value>
+  </data>
+  <data name="SystemTypeLabel.Text" xml:space="preserve">
+    <value>පද්ධති වර්ගය</value>
+  </data>
+  <data name="PenAndTouchLabel.Text" xml:space="preserve">
+    <value>පෑන සහ ස්පර්ශය</value>
+  </data>
+  <data name="DeviceUnavailable" xml:space="preserve">
+    <value>ලබා ගත නොහැක</value>
+  </data>
+  <data name="DeviceSystemType" xml:space="preserve">
+    <value>බිට් {0} මෙහෙයුම් පද්ධතිය, {1} පාදක සකසනය</value>
+  </data>
+  <data name="DeviceNoTouch" xml:space="preserve">
+    <value>මෙම තිරය සඳහා පෑන හෝ ස්පර්ශ ආදානය ලබා ගත නොහැක</value>
+  </data>
+  <data name="DeviceTouch" xml:space="preserve">
+    <value>ස්පර්ශ ලක්ෂ්‍ය {0}ක් සමඟ ස්පර්ශ සහාය</value>
+  </data>
+  <data name="DevicePen" xml:space="preserve">
+    <value>පෑන සහාය</value>
+  </data>
+  <data name="DevicePenAndTouch" xml:space="preserve">
+    <value>ස්පර්ශ ලක්ෂ්‍ය {0}ක් සමඟ පෑන සහ ස්පර්ශ සහාය</value>
+  </data>
+  <data name="SettingsTitle.Text" xml:space="preserve">
+    <value>සැකසුම්</value>
+  </data>
+  <data name="AppearanceCategory.Text" xml:space="preserve">
+    <value>පෙනුම</value>
+  </data>
+  <data name="AppThemeTitle.Text" xml:space="preserve">
+    <value>යෙදුම් තේමාව</value>
+  </data>
+  <data name="AppThemeDescription.Text" xml:space="preserve">
+    <value>පෙන්වීමට යෙදුම් තේමාව තෝරන්න</value>
+  </data>
+  <data name="LightTheme.Content" xml:space="preserve">
+    <value>ආලෝක</value>
+  </data>
+  <data name="DarkTheme.Content" xml:space="preserve">
+    <value>අඳුරු</value>
+  </data>
+  <data name="SystemTheme.Content" xml:space="preserve">
+    <value>පද්ධති සැකසුම භාවිත කරන්න</value>
+  </data>
+  <data name="LegalSettingTitle.Text" xml:space="preserve">
+    <value>නීතිමය තොරතුරු</value>
+  </data>
+  <data name="LegalSettingDescription.Text" xml:space="preserve">
+    <value>බලපත්‍ර තොරතුරු පෙන්වන්න</value>
+  </data>
+  <data name="StartupCategory.Text" xml:space="preserve">
+    <value>Windows පිළිබඳ යෙදුම විවෘත කරන විට</value>
+  </data>
+  <data name="RememberCardsTitle.Text" xml:space="preserve">
+    <value>කාඩ්පත් තත්ත්වය මතක තබා ගන්න</value>
+  </data>
+  <data name="RememberCardsDescription.Text" xml:space="preserve">
+    <value>ආරම්භයේදී දිගහැරුණු සහ හැකිළුණු කාඩ්පත් ප්‍රතිස්ථාපනය කරන්න</value>
+  </data>
+  <data name="Expiration.Text" xml:space="preserve">
+    <value>කල් ඉකුත් වීම</value>
+  </data>
+  <data name="SettingsButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>සැකසුම් විවෘත කරන්න</value>
+  </data>
+  <data name="SettingsButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>සැකසුම් විවෘත කරන්න</value>
+  </data>
+  <data name="SettingsBackButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>ආපසු</value>
+  </data>
+  <data name="SettingsBackButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>ආපසු</value>
+  </data>
+  <data name="ShowLegalToggle.OnContent" xml:space="preserve">
+    <value>සක්‍රිය</value>
+  </data>
+  <data name="ShowLegalToggle.OffContent" xml:space="preserve">
+    <value>අක්‍රිය</value>
+  </data>
+  <data name="RememberCardsToggle.OnContent" xml:space="preserve">
+    <value>සක්‍රිය</value>
+  </data>
+  <data name="RememberCardsToggle.OffContent" xml:space="preserve">
+    <value>අක්‍රිය</value>
+  </data>
+  <data name="RememberCardsToggle.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>කාඩ්පත් තත්ත්වය මතක තබා ගන්න</value>
+  </data>
+  <data name="ApplicationName" xml:space="preserve">
+    <value>WinMac Winver</value>
+  </data>
+  <data name="DeviceMemoryFormat" xml:space="preserve">
+    <value>{0} GB</value>
+  </data>
+  <data name="ShowLegalToggle.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>නීතිමය තොරතුරු</value>
+  </data>
+  <data name="GraphicsCardLabel.Text" xml:space="preserve">
+    <value>ග්‍රැෆික් කාඩ්පත</value>
+  </data>
+  <data name="StorageLabel.Text" xml:space="preserve">
+    <value>ආචයනය</value>
+  </data>
+  <data name="Experience.Text" xml:space="preserve">
+    <value>අත්දැකීම</value>
+  </data>
+  <data name="DeviceStorageFormat" xml:space="preserve">
+    <value>{0} GB</value>
+  </data>
+  <data name="DeviceGraphicsFormat" xml:space="preserve">
+    <value>{0} ({1} MB)</value>
+  </data>
+  <data name="MoreInfoButton.Content" xml:space="preserve">
+    <value>වැඩිදුර තොරතුරු</value>
+  </data>
+  <data name="CollapsibleCardsTitle.Text" xml:space="preserve"><value>තොරතුරු කොටස් හැකිළීමට ඉඩ දෙන්න</value></data>
+  <data name="CollapsibleCardsDescription.Text" xml:space="preserve"><value>තොරතුරු කොටස් දිග හැරීමට සහ හැකිළීමට ඉඩ දෙන්න</value></data>
+  <data name="CollapsibleCardsToggle.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>තොරතුරු කොටස් හැකිළීමට ඉඩ දෙන්න</value></data>
+  <data name="CollapsibleCardsToggle.OnContent" xml:space="preserve"><value>සක්‍රිය</value></data>
+  <data name="CollapsibleCardsToggle.OffContent" xml:space="preserve"><value>අක්‍රිය</value></data>
+  <data name="WindowDisplayName" xml:space="preserve"><value>Windows ගැන</value></data>
 </root>

@@ -118,10 +118,10 @@ public static unsafe class RegistryHelper
         }
     }
 
-    private static _KEY_VALUE_PARTIAL_INFORMATION* ReadInfo(string valueName)
+    private static _KEY_VALUE_PARTIAL_INFORMATION* ReadInfo(string valueName, string keyPath = @"\Registry\Machine\SOFTWARE\Microsoft\Windows NT\CurrentVersion")
     {
         Initialize();
-        fixed (char* key = @"\Registry\Machine\SOFTWARE\Microsoft\Windows NT\CurrentVersion")
+        fixed (char* key = keyPath)
         {
             UNICODE_STRING* uKeyName = (UNICODE_STRING*)malloc((nuint)sizeof(UNICODE_STRING));
             _RtlInitUnicodeString(uKeyName, (ushort*)key);
@@ -135,7 +135,11 @@ public static unsafe class RegistryHelper
                 RootDirectory = HANDLE.NULL
             };
             HANDLE hKey;
-            _NtOpenKey(&hKey, 0x80000000, &objectAttributes);
+            if (_NtOpenKey(&hKey, 0x80000000, &objectAttributes) < 0)
+            {
+                free(uKeyName);
+                return null;
+            }
 
             fixed (char* pValue = valueName)
             {
@@ -144,7 +148,7 @@ public static unsafe class RegistryHelper
                 // Query once to get the size of KEY_VALUE_PARTIAL_INFORMATION we need
                 uint resultLength;
                 int error = _NtQueryValueKey(hKey, uValueName, 2, null, 0, &resultLength);
-                if (error == -1073741772)
+                if (error >= 0 || resultLength == 0 || (error != -1073741789 && error != -2147483643))
                 {
                     // Key doesn't exist
                     _NtClose(hKey);
@@ -154,10 +158,15 @@ public static unsafe class RegistryHelper
                 }
                 // Second query for value.
                 _KEY_VALUE_PARTIAL_INFORMATION* partialInfo = (_KEY_VALUE_PARTIAL_INFORMATION*)malloc(resultLength);
-                _NtQueryValueKey(hKey, uValueName, 2, partialInfo, resultLength, &resultLength);
+                int queryStatus = _NtQueryValueKey(hKey, uValueName, 2, partialInfo, resultLength, &resultLength);
                 _NtClose(hKey);
                 free(uValueName);
                 free(uKeyName);
+                if (queryStatus < 0)
+                {
+                    free(partialInfo);
+                    return null;
+                }
                 return partialInfo;
             }
         }
@@ -173,9 +182,25 @@ public static unsafe class RegistryHelper
         return value;
     }
 
-    public static string? GetInfoString(string valueName)
+    public static byte[]? GetInfoBinary(string valueName, string keyPath)
     {
-        _KEY_VALUE_PARTIAL_INFORMATION* info = ReadInfo(valueName);
+        var info = ReadInfo(valueName, keyPath);
+        if (info == null)
+            return null;
+        try
+        {
+            if (info->Type != 3)
+                return null;
+            var bytes = new byte[info->DataLength];
+            Marshal.Copy((System.IntPtr)info->Data, bytes, 0, bytes.Length);
+            return bytes;
+        }
+        finally { free(info); }
+    }
+
+    public static string? GetInfoString(string valueName, string keyPath = @"\Registry\Machine\SOFTWARE\Microsoft\Windows NT\CurrentVersion")
+    {
+        _KEY_VALUE_PARTIAL_INFORMATION* info = ReadInfo(valueName, keyPath);
         if (info == null)
             return null;
         string test = new string((char*)info->Data);

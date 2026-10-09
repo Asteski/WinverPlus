@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -129,12 +129,6 @@
   <data name="Edition.Text" xml:space="preserve">
     <value>Editie</value>
   </data>
-  <data name="Experience.Text" xml:space="preserve">
-    <value>Ervaring</value>
-  </data>
-  <data name="ExperiencePack" xml:space="preserve">
-    <value>Windows Feature Experience Pack</value>
-  </data>
   <data name="InstalledOn.Text" xml:space="preserve">
     <value>Installatiedatum</value>
   </data>
@@ -157,6 +151,147 @@
     <value>Versie</value>
   </data>
   <data name="WindowsSpecifications.Text" xml:space="preserve">
-    <value>Windows specificaties</value>
+    <value>Windows-informatie</value>
   </data>
+  <data name="DeviceInfo.Text" xml:space="preserve">
+    <value>Apparaatinformatie</value>
+  </data>
+  <data name="DeviceNameLabel.Text" xml:space="preserve">
+    <value>Apparaatnaam</value>
+  </data>
+  <data name="ProcessorLabel.Text" xml:space="preserve">
+    <value>Processor</value>
+  </data>
+  <data name="InstalledRamLabel.Text" xml:space="preserve">
+    <value>Geheugen</value>
+  </data>
+  <data name="DeviceIdLabel.Text" xml:space="preserve">
+    <value>Apparaat-id</value>
+  </data>
+  <data name="ProductIdLabel.Text" xml:space="preserve">
+    <value>Product-id</value>
+  </data>
+  <data name="SystemTypeLabel.Text" xml:space="preserve">
+    <value>Type systeem</value>
+  </data>
+  <data name="PenAndTouchLabel.Text" xml:space="preserve">
+    <value>Pen en aanraken</value>
+  </data>
+  <data name="DeviceUnavailable" xml:space="preserve">
+    <value>Niet beschikbaar</value>
+  </data>
+  <data name="DeviceSystemType" xml:space="preserve">
+    <value>{0}-bits besturingssysteem, {1}-processor</value>
+  </data>
+  <data name="DeviceNoTouch" xml:space="preserve">
+    <value>Er is geen pen- of aanraakinvoer beschikbaar voor dit beeldscherm</value>
+  </data>
+  <data name="DeviceTouch" xml:space="preserve">
+    <value>Ondersteuning voor aanraken met {0} aanraakpunten</value>
+  </data>
+  <data name="DevicePen" xml:space="preserve">
+    <value>Ondersteuning voor pen</value>
+  </data>
+  <data name="DevicePenAndTouch" xml:space="preserve">
+    <value>Ondersteuning voor pen en aanraken met {0} aanraakpunten</value>
+  </data>
+  <data name="SettingsTitle.Text" xml:space="preserve">
+    <value>Instellingen</value>
+  </data>
+  <data name="AppearanceCategory.Text" xml:space="preserve">
+    <value>Uiterlijk</value>
+  </data>
+  <data name="AppThemeTitle.Text" xml:space="preserve">
+    <value>App-thema</value>
+  </data>
+  <data name="AppThemeDescription.Text" xml:space="preserve">
+    <value>Selecteer het thema van de app</value>
+  </data>
+  <data name="LightTheme.Content" xml:space="preserve">
+    <value>Licht</value>
+  </data>
+  <data name="DarkTheme.Content" xml:space="preserve">
+    <value>Donker</value>
+  </data>
+  <data name="SystemTheme.Content" xml:space="preserve">
+    <value>Systeeminstelling gebruiken</value>
+  </data>
+  <data name="LegalSettingTitle.Text" xml:space="preserve">
+    <value>Juridische informatie</value>
+  </data>
+  <data name="LegalSettingDescription.Text" xml:space="preserve">
+    <value>Licentiegegevens weergeven</value>
+  </data>
+  <data name="StartupCategory.Text" xml:space="preserve">
+    <value>Bij het openen van Over Windows</value>
+  </data>
+  <data name="RememberCardsTitle.Text" xml:space="preserve">
+    <value>Kaartstatus onthouden</value>
+  </data>
+  <data name="RememberCardsDescription.Text" xml:space="preserve">
+    <value>Uitgevouwen en samengevouwen kaarten herstellen bij het opstarten</value>
+  </data>
+  <data name="Expiration.Text" xml:space="preserve">
+    <value>Vervaldatum</value>
+  </data>
+  <data name="SettingsButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Instellingen openen</value>
+  </data>
+  <data name="SettingsButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Instellingen openen</value>
+  </data>
+  <data name="SettingsBackButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Terug</value>
+  </data>
+  <data name="SettingsBackButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Terug</value>
+  </data>
+  <data name="ShowLegalToggle.OnContent" xml:space="preserve">
+    <value>Aan</value>
+  </data>
+  <data name="ShowLegalToggle.OffContent" xml:space="preserve">
+    <value>Uit</value>
+  </data>
+  <data name="RememberCardsToggle.OnContent" xml:space="preserve">
+    <value>Aan</value>
+  </data>
+  <data name="RememberCardsToggle.OffContent" xml:space="preserve">
+    <value>Uit</value>
+  </data>
+  <data name="RememberCardsToggle.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Kaartstatus onthouden</value>
+  </data>
+  <data name="ApplicationName" xml:space="preserve">
+    <value>WinMac Winver</value>
+  </data>
+  <data name="DeviceMemoryFormat" xml:space="preserve">
+    <value>{0} GB</value>
+  </data>
+  <data name="ShowLegalToggle.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Juridische informatie</value>
+  </data>
+  <data name="GraphicsCardLabel.Text" xml:space="preserve">
+    <value>Grafische kaart</value>
+  </data>
+  <data name="StorageLabel.Text" xml:space="preserve">
+    <value>Opslag</value>
+  </data>
+  <data name="Experience.Text" xml:space="preserve">
+    <value>Ervaring</value>
+  </data>
+  <data name="DeviceStorageFormat" xml:space="preserve">
+    <value>{0} GB</value>
+  </data>
+  <data name="DeviceGraphicsFormat" xml:space="preserve">
+    <value>{0} ({1} MB)</value>
+  </data>
+  <data name="MoreInfoButton.Content" xml:space="preserve">
+    <value>Meer informatie</value>
+  </data>
+  <data name="CollapsibleCardsTitle.Text" xml:space="preserve"><value>Informatieblokken inklapbaar maken</value></data>
+  <data name="CollapsibleCardsDescription.Text" xml:space="preserve"><value>Informatieblokken uitklappen en inklappen</value></data>
+  <data name="CollapsibleCardsToggle.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>Informatieblokken inklapbaar maken</value></data>
+  <data name="CollapsibleCardsToggle.OnContent" xml:space="preserve"><value>Aan</value></data>
+  <data name="CollapsibleCardsToggle.OffContent" xml:space="preserve"><value>Uit</value></data>
+  <data name="WindowDisplayName" xml:space="preserve"><value>Over Windows</value></data>
 </root>

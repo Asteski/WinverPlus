@@ -1,22 +1,24 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <Package
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   xmlns:desktop4="http://schemas.microsoft.com/appx/manifest/desktop/windows10/4"
+  xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
   xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5"
-  IgnorableNamespaces="uap mp desktop4 uap5">
+  IgnorableNamespaces="uap mp desktop4 uap5 desktop rescap">
 
 	<Identity
 	  Name="fda0e24a-1e63-4f79-8739-72fd5d68db9c"
 	  Publisher="CN=Dongle"
-	  Version="2.1.0.0" />
+	  Version="2.1.0.39" />
 
 	<mp:PhoneIdentity PhoneProductId="fda0e24a-1e63-4f79-8739-72fd5d68db9c" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
 	<Properties>
-		<DisplayName>WinverUWP</DisplayName>
+		<DisplayName>ms-resource:ApplicationName</DisplayName>
 		<PublisherDisplayName>Dongle</PublisherDisplayName>
 		<Logo>Assets\StoreLogo.png</Logo>
 	</Properties>
@@ -35,19 +37,21 @@
 					 EntryPoint="WinverUWP.App"
 					 desktop4:Subsystem="windows">
 			<uap:VisualElements
-				DisplayName="WinverUWP"
+				DisplayName="ms-resource:WindowDisplayName"
 				Square150x150Logo="Assets\Square150x150Logo.png"
 				Square44x44Logo="Assets\Square44x44Logo.png"
-				Description="WinverUWP"
+				Description="WinMac Winver"
 				BackgroundColor="transparent">
 				<uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square71x71Logo="Assets\SmallTile.png" Square310x310Logo="Assets\LargeTile.png"/>
-				<uap:SplashScreen Image="Assets\SplashScreen.png" uap5:Optional="true" />
-			</uap:VisualElements>
+			<uap:SplashScreen Image="Assets\SplashScreen.png" uap5:Optional="true" />
+</uap:VisualElements>
 
 			<Extensions>
+                <desktop:Extension Category="windows.fullTrustProcess" Executable="InventoryProbe.exe" />
 				<uap5:Extension Category="windows.appExecutionAlias">
 					<uap5:AppExecutionAlias desktop4:Subsystem="windows">
 						<uap5:ExecutionAlias Alias="winveruwp.exe" />
+                        <uap5:ExecutionAlias Alias="winmacwinver.exe" />
 					</uap5:AppExecutionAlias>
 				</uap5:Extension>
 				<uap:Extension Category="windows.protocol">
@@ -56,4 +60,5 @@
 			</Extensions>
 		</Application>
 	</Applications>
+    <Capabilities><rescap:Capability Name="runFullTrust" /></Capabilities>
 </Package>
